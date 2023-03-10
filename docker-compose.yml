@@ -19,6 +19,7 @@ services:
       - "2345:2345"
     volumes:
       - ./.testnets:/data:Z
+    command: simd init demo
     networks:
       localnet:
         ipv4_address: 192.168.10.2
